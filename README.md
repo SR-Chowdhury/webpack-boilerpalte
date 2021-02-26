@@ -88,4 +88,41 @@ Update ‘webpack.config.js’ =>
 			},
 		]
 	},
+	
+	
+Now we are using CSS loader with MiniCssExtractPlugin
+
+run: 
+
+	npm install --save-dev css-loader mini-css-extract-plugin
+	
+Update index.html =>
+
+	<link rel="stylesheet" href="/dist/main.css">
+
+Update webpack.config.js =>
+
+	const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+Inside module.exports  add =>
+
+	// CSS Loader
+	{
+		test: /\.css$/,
+		use: [
+			MiniCssExtractPlugin.loader, // instead of "style-loader",
+	'		css-loader'
+		],
+	},
+
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: '[name].css',
+			chunkFilename: '[id].css',
+		}),
+	]
+
+Update index.js =>
+
+	import '../styles/index.css';
 
