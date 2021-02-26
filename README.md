@@ -59,3 +59,33 @@ Basic Setup
 	fun();
 
     • You are now ready to show output [npm run build]
+    
+Now time is coming for using bable-loader for converting ES6 to ES5
+
+run: 
+	npm install i -D babel-loader @babel/core @babel/preset-env webpack
+	
+run:
+	npm install i -D@babel/plugin-proposal-class-properties
+
+
+Update ‘webpack.config.js’ =>
+
+	module: {
+		rules: 
+		[
+			// Babel Loader with plugins
+			{
+				test: /\.m?js$/,
+				exclude: /(node_modules|bower_components)/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env'],
+						plugins: ['@babel/plugin-proposal-class-properties']
+					}
+				}
+			},
+		]
+	},
+
