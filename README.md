@@ -1,6 +1,6 @@
 # Webpack Boiler Plate
 
-**Getting Started: 
+**Getting Started:** 
 _Webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included._
 
 # Basic Setup
@@ -12,11 +12,13 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
   * create a ‘styles’ folder. Within ‘styles’ folder
     * create a ‘index.css’ file
   * create index.html file
-* from this (webpack-bp) directory run: npm init -y
+* from this (webpack-bp) directory run: 
+		
+		npm init -y
 * Create ‘webpack.config.js’ file
 * run: 
-
-	npm i -D webpack webpack-cli
+ 		
+		npm i -D webpack webpack-cli
 	
 **webpack.config.js =>** 
       
@@ -63,11 +65,11 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 
 **----You are now ready to show output [npm run build]---**
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+///////////////////////////////////////////////////////////////////////////////////////////////
     
-# Now time is coming for using bable-loader for converting ES6 to ES5
+# Now time is coming for using babel-loader for converting ES6 to ES5
 
-**install babek-loader: **
+**install babel-loader:**
 	
 	npm install i -D babel-loader @babel/core @babel/preset-env webpack
 	
@@ -97,7 +99,7 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 	},
 	
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 # Now we are using CSS loader with MiniCssExtractPlugin
 
@@ -135,7 +137,7 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 
 	import '../styles/index.css';
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 # If you want to use SASS instead of CSS than here we go….
 
