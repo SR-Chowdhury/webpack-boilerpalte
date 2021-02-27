@@ -126,3 +126,30 @@ Update index.js =>
 
 	import '../styles/index.css';
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+If you want to use SASS instead of CSS than here we go….
+
+To begin you’ll need to install sass-loader 
+
+	npm i -D sass-loader sass
+
+Then update the webpack.config.js =>
+
+	// CSS Loader + sass loader
+	{
+		test: /\.scss$/,
+		use: [
+			MiniCssExtractPlugin.loader, // instead of "style-loader",
+			'css-loader',
+			'sass-loader'
+		],
+	},
+
+Rename index.css file  as
+	
+	index.scss 
+
+Update index.js =>
+
+	import '../styles/index.scss';
