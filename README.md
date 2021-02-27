@@ -128,7 +128,7 @@ Update index.js =>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-If you want to use SASS instead of CSS than here we go….
+**If you want to use SASS instead of CSS than here we go….**
 
 To begin you’ll need to install sass-loader 
 
@@ -153,3 +153,44 @@ Rename index.css file  as
 Update index.js =>
 
 	import '../styles/index.scss';
+	
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+**Now we are using HTML loader with MiniCssExtractPlugin**
+
+To begin you’ll need to install html-loader & HtmlWebPackPlugin 
+
+	npm i -D html-loader  html-webpack-plugin
+	
+Update webpack.config.js =>
+
+_add top of the file_
+
+	const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+_add loader_
+
+	// HTML loader 
+	{
+		test: /\.html$/i,
+		use: 'html-loader',
+	}
+
+_add plugins_
+
+	new HtmlWebpackPlugin({
+		template: './src/index.html'
+	}),
+
+
+Update index.html file =>
+
+_delete those link file from index.html file_
+
+	<link rel="stylesheet" href="/dist/main.css">
+
+	<script src="/dist/bundle.js"></script>
+
+
+**Finally run index.html from dist folder. Done!!!**
