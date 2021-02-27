@@ -194,3 +194,32 @@ _delete those link file from index.html file_
 
 
 **Finally run index.html from dist folder. Done!!!**
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+**Finally we are using webpack-dev-server**
+
+_First thing first, install the module:_
+
+	npm i -D webpack-dev-server
+
+Update webpack.config.js =>
+
+	devServer: {
+		compress: true,
+		open: true,
+		port: 2222, // it can be anything like 3300
+	},
+
+Update package.json =>
+
+	"scripts": {
+		"start": "webpack serve",
+		"build": "webpack"
+	},
+
+Finally run
+
+	npm start
+
+**Here we go…… start your live server. Thanks**
