@@ -1,21 +1,23 @@
-Webpack Boiler Plate
+**Webpack Boiler Plate**
 
-Getting Started: 
-Webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.
+**Getting Started: 
+_Webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included._
 
-Basic Setup
-    • Let’s create a directory example: webpack-bp
-    
-    • Create a ‘src’ folder. Within this folder
-        ◦ create a ‘scripts’ folder
-            ▪ create a ‘index.js’ file
-        ◦ create a ‘styles’ folder
-            ▪ create a ‘index.css’ file
-    • from this (webpack-bp) directory run: npm init -y
-    • Create ‘webpack.config.js’ file
-    • run: npm i -D webpack 
-    • run: npm i -D webpack-cli
-    • webpack.config.js => 
+**Basic Setup
+# Let’s create a directory example: webpack-bp
+# Create a ‘src’ folder. Within ‘src’ folder
+  * create a ‘scripts’ folder. Within ‘scripts’ folder
+    * create a ‘index.js’ file
+  * create a ‘styles’ folder. Within ‘styles’ folder
+    * create a ‘index.css’ file
+  * create index.html file
+# from this (webpack-bp) directory run: npm init -y
+# Create ‘webpack.config.js’ file
+# run: 
+
+	npm i -D webpack webpack-cli
+	
+#webpack.config.js => 
       
 	const path = require('path');
 
