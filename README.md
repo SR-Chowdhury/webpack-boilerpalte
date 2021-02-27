@@ -65,7 +65,7 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 
 **----You are now ready to show output [npm run build]---**
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
 # Now time is coming for using babel-loader for converting ES6 to ES5
 
@@ -99,11 +99,11 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 	},
 	
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Now we are using CSS loader with MiniCssExtractPlugin
 
-**run: **
+**run:**
 
 	npm install --save-dev css-loader mini-css-extract-plugin
 	
@@ -137,11 +137,11 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 
 	import '../styles/index.css';
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # If you want to use SASS instead of CSS than here we go….
 
-**To begin you’ll need to install sass-loader **
+_To begin you’ll need to install sass-loader_
 
 	npm i -D sass-loader sass
 
@@ -166,15 +166,15 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 	import '../styles/index.scss';
 	
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-**Now we are using HTML loader with MiniCssExtractPlugin**
+# Now we are using HTML loader with MiniCssExtractPlugin
 
-To begin you’ll need to install html-loader & HtmlWebPackPlugin 
+_To begin you’ll need to install html-loader & HtmlWebPackPlugin _
 
 	npm i -D html-loader  html-webpack-plugin
 	
-Update webpack.config.js =>
+**Update webpack.config.js =>**
 
 _add top of the file_
 
@@ -195,7 +195,7 @@ _add plugins_
 	}),
 
 
-Update index.html file =>
+**Update index.html file =>**
 
 _delete those link file from index.html file_
 
@@ -206,7 +206,7 @@ _delete those link file from index.html file_
 
 **Finally run index.html from dist folder. Done!!!**
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 **Finally we are using webpack-dev-server**
 
@@ -214,7 +214,7 @@ _First thing first, install the module:_
 
 	npm i -D webpack-dev-server
 
-Update webpack.config.js =>
+**Update webpack.config.js =>**
 
 	devServer: {
 		compress: true,
@@ -222,15 +222,15 @@ Update webpack.config.js =>
 		port: 2222, // it can be anything like 3300
 	},
 
-Update package.json =>
+**Update package.json =>**
 
 	"scripts": {
 		"start": "webpack serve",
 		"build": "webpack"
 	},
 
-Finally run
+**Finally run**
 
 	npm start
 
-**Here we go…… start your live server. Thanks**
+# Here we go…… start your live server. Thanks
