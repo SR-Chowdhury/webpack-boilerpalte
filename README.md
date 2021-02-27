@@ -1,23 +1,24 @@
-**Webpack Boiler Plate**
+# Webpack Boiler Plate
 
 **Getting Started: 
 _Webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included._
 
-**Basic Setup
-# Let’s create a directory example: webpack-bp
-# Create a ‘src’ folder. Within ‘src’ folder
+# Basic Setup
+
+* Let’s create a directory example: webpack-bp
+* Create a ‘src’ folder. Within ‘src’ folder
   * create a ‘scripts’ folder. Within ‘scripts’ folder
     * create a ‘index.js’ file
   * create a ‘styles’ folder. Within ‘styles’ folder
     * create a ‘index.css’ file
   * create index.html file
-# from this (webpack-bp) directory run: npm init -y
-# Create ‘webpack.config.js’ file
-# run: 
+* from this (webpack-bp) directory run: npm init -y
+* Create ‘webpack.config.js’ file
+* run: 
 
 	npm i -D webpack webpack-cli
 	
-#webpack.config.js => 
+**webpack.config.js =>** 
       
 	const path = require('path');
 
@@ -32,13 +33,13 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 
 	};
 
-    • package.json =>
-      
+**package.json =>**
+
       "scripts": {
 		"build": "webpack",
 	},
 
-    • index.html =>
+**index.html =>**
       
       <!DOCTYPE html>
 	<html lang="en">
@@ -55,23 +56,27 @@ _Webpack is an open-source JavaScript module bundler. It is made primarily fo
 	</body>
 	</html>
 
-    • index.js
+**index.js**
       
-      const fun = () => console.log('Allahuakbar');
+	const fun = () => console.log('Allahuakbar');
 	fun();
 
-    • You are now ready to show output [npm run build]
-    
-Now time is coming for using bable-loader for converting ES6 to ES5
+**----You are now ready to show output [npm run build]---**
 
-run: 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+    
+# Now time is coming for using bable-loader for converting ES6 to ES5
+
+**install babek-loader: **
+	
 	npm install i -D babel-loader @babel/core @babel/preset-env webpack
 	
-run:
+**install babel-plugin**
+
 	npm install i -D@babel/plugin-proposal-class-properties
 
 
-Update ‘webpack.config.js’ =>
+**Update ‘webpack.config.js’ =>**
 
 	module: {
 		rules: 
@@ -91,22 +96,24 @@ Update ‘webpack.config.js’ =>
 		]
 	},
 	
-	
-Now we are using CSS loader with MiniCssExtractPlugin
 
-run: 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+# Now we are using CSS loader with MiniCssExtractPlugin
+
+**run: **
 
 	npm install --save-dev css-loader mini-css-extract-plugin
 	
-Update index.html =>
+**Update index.html =>**
 
 	<link rel="stylesheet" href="/dist/main.css">
 
-Update webpack.config.js =>
+**Update webpack.config.js =>**
 
 	const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-Inside module.exports  add =>
+**Inside module.exports  add =>**
 
 	// CSS Loader
 	{
@@ -124,19 +131,19 @@ Inside module.exports  add =>
 		}),
 	]
 
-Update index.js =>
+**Update index.js =>**
 
 	import '../styles/index.css';
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-**If you want to use SASS instead of CSS than here we go….**
+# If you want to use SASS instead of CSS than here we go….
 
-To begin you’ll need to install sass-loader 
+**To begin you’ll need to install sass-loader **
 
 	npm i -D sass-loader sass
 
-Then update the webpack.config.js =>
+**Then update the webpack.config.js =>**
 
 	// CSS Loader + sass loader
 	{
@@ -148,11 +155,11 @@ Then update the webpack.config.js =>
 		],
 	},
 
-Rename index.css file  as
+**Rename index.css file  as**
 	
 	index.scss 
 
-Update index.js =>
+**Update index.js =>**
 
 	import '../styles/index.scss';
 	
