@@ -1,4 +1,5 @@
-# Webpack Boiler Plate
+# EXPL:first_quarter_moon:RE SUPER:star2: W:last_quarter_moon:RLD 
+# Webpack Boiler Palte
 
 **Getting Started:** 
 _Webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included._
