@@ -8,7 +8,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shihan Chowdhury",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.1",
